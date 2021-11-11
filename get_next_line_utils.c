@@ -6,7 +6,7 @@
 /*   By: tbrandt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 17:13:06 by tbrandt           #+#    #+#             */
-/*   Updated: 2021/11/10 16:59:01 by tbrandt          ###   ########.fr       */
+/*   Updated: 2021/11/11 15:53:34 by tbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while(str && str[i])
+	while (str && str[i])
 		i++;
 	return (i);
 }
@@ -59,11 +59,11 @@ char	*ft_strndup(char *str, int n)
 	char	*ptr;
 	int		i;
 
-	ptr = malloc(sizeof(char) * (n + 1));
+	ptr = malloc(sizeof(char) * (n + 2));
 	if (!ptr || !str)
 		return (NULL);
 	i = 0;
-	while (str[i] && i <= n)
+	while (str[i] && (i <= n))
 	{
 		ptr[i] = str[i];
 		i++;
@@ -78,7 +78,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	int		i;
 	int		j;
 
-	str = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)) + 1);
+	str = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!str)
 		return (NULL);
 	i = 0;

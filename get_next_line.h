@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tbrandt <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/03 17:20:19 by tbrandt           #+#    #+#             */
+/*   Updated: 2021/11/11 15:53:23 by tbrandt          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-#include <stdlib.h> // malloc
-#include <unistd.h>	// read
-#include <sys/types.h> // open
-#include <sys/stat.h> // open
-#include <fcntl.h> // open
+# include	<stdlib.h> // malloc
+# include	<unistd.h>	// read
+# include	<sys/types.h> // open
+# include	<sys/stat.h> // open
+# include	<fcntl.h> // open
 
 char	*get_next_line(int fd);
 int		ft_strchr(char *s, int c);
